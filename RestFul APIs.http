@@ -1,0 +1,21 @@
+@host = http://localhost:5062
+
+### Get All Projects
+GET {{host}}/GetProjects
+Accept: application/json
+
+### Get Project By Id
+GET {{host}}/api/User/GetProjectById/1
+Accept: application/json
+
+### Create Project
+POST {{host}}/api/User/CreateProject
+Content-Type: application/json
+
+{
+    "projectName": "Ayans Villas",
+    "location": "Lucknow"
+}
+
+### Delete Project
+DELETE {{host}}/api/User/DeleteProject/1
